@@ -1,8 +1,10 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro"
+    />
     <link rel="stylesheet" href="./css/rocco.css" />
     <title>My Webpage</title>
   </head>
@@ -11,61 +13,80 @@
 
     <h1 id="top">Rocco Scavone</h1>
 
-    <p>Ciao a tutti, sono uno studente di <strong>informatica</strong></p>
-
-    <figure>
-      <div class="bodiv">
-        <img src="./img/immagineProfilo.png" class="iclass" width="350" height="450"/>
+    <div class="float-container">
+      <div>
+        <p>
+          Ciao a tutti, sono uno studente di <strong>informatica</strong>
+        </p>
       </div>
-      <figcaption>Questo sono io</figcaption>
-    </figure>
+      <div>
+        <figure>
+          <div class="bodiv">
+            <img
+              src="./img/immagineProfilo.png"
+              class="iclass"
+              width="350"
+              height="450"
+            />
+          </div>
+          <figcaption>Questo sono io</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div>
+        <h2>Informazioni Personali</h2>
+        <ul class="info">
+          <li>Nome: <i>Rocco</i></li>
+          <li>Cognome: <i>Scavone</i></li>
+          <li>Città: <i>Ruoti</i></li>
+          <li>
+            Provincia: <b><i>Potenza</i></b>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Materie Studiate</h2>
+        <ul class="info">
+          <li>Programmazione ad Oggetti</li>
+          <li>Programmazione Procedurale</li>
+          <li>Reti di Calcolatori</li>
+          <li>Ingegneria del Software</li>
+          <li>Analisi II</li>
+          <li>Architettura dei Calcolatori</li>
+          <li>Complementi di Calcolo</li>
+          <li>Elettrotecnica</li>
+          <li>Fisica</li>
+          <li>Fondamenti di Sistemi Dinamici</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Esperienze Lavorative</h2>
+        <iframe
+          src="https://giphy.com/embed/101bGn3EItQr1C"
+          width="480"
+          height="250"
+          frameborder="0"
+          class="giphy-embed"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
 
-    <h2>Informazioni Personali</h2>
-    <ul class="info">
-      <li>Nome: <i>Rocco</i></li>
-      <li>Cognome: <i>Scavone</i></li>
-      <li>Città: <i>Ruoti</i></li>
-      <li>
-        Provincia: <b><i>Potenza</i></b>
-      </li>
-    </ul>
-    <h2>Materie Studiate</h2>
-    <ul class="info">
-      <li>Programmazione ad Oggetti</li>
-      <li>Programmazione Procedurale</li>
-      <li>Reti di Calcolatori</li>
-      <li>Ingegneria del Software</li>
-      <li>Analisi II</li>
-      <li>Architettura dei Calcolatori</li>
-      <li>Complementi di Calcolo</li>
-      <li>Elettrotecnica</li>
-      <li>Fisica</li>
-      <li>Fondamenti di Sistemi Dinamici</li>
-    </ul>
-
-    <h2>Esperienze Lavorative</h2>
-    <iframe
-      src="https://giphy.com/embed/101bGn3EItQr1C"
-      width="480"
-      height="250"
-      frameborder="0"
-      class="giphy-embed"
-      allowfullscreen
-    ></iframe>
     <div>
       <h2>Orari Disponibilità</h2>
-      <table width="300">
+      <table width="300" id="customers">
         <tr>
           <th>Lunedì</th>
           <th>Mercoledì</th>
           <th>Venerdì</th>
         </tr>
-        <tr align="center">
+        <tr>
           <td>10-11</td>
           <td>9-12</td>
           <td>10-10:30</td>
         </tr>
-        <tr align="center">
+        <tr>
           <td>15-16</td>
           <td>15-16</td>
           <td>15-16</td>
