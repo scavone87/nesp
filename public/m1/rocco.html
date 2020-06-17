@@ -1,22 +1,27 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <link rel="stylesheet" href="./css/rocco.css" />
     <title>My Webpage</title>
   </head>
   <body>
-    
-    <a href="."> &laquo; Back</a>
+    <button id="back"><a href="."> &laquo; Back</a></button>
 
     <h1 id="top">Rocco Scavone</h1>
 
     <p>Ciao a tutti, sono uno studente di <strong>informatica</strong></p>
+
     <figure>
-      <img src="./img/immagineProfilo.png" width="300" height="400" />
+      <div class="bodiv">
+        <img src="./img/immagineProfilo.png" class="iclass" width="350" height="450"/>
+      </div>
       <figcaption>Questo sono io</figcaption>
     </figure>
 
     <h2>Informazioni Personali</h2>
-    <ul>
+    <ul class="info">
       <li>Nome: <i>Rocco</i></li>
       <li>Cognome: <i>Scavone</i></li>
       <li>Città: <i>Ruoti</i></li>
@@ -25,7 +30,7 @@
       </li>
     </ul>
     <h2>Materie Studiate</h2>
-    <ul>
+    <ul class="info">
       <li>Programmazione ad Oggetti</li>
       <li>Programmazione Procedurale</li>
       <li>Reti di Calcolatori</li>
@@ -67,6 +72,53 @@
         </tr>
       </table>
     </div>
+
+    <div padding="20">
+      <h2>Prenota un appuntamento</h2>
+      <label for="day">Giorno</label>
+      <select name="giorno" id="day">
+        <option value="lunedi">Lunedì</option>
+        <option value="mercoledì">Mercoledì</option>
+        <option value="venerdì">Venerdì</option>
+      </select>
+      <label for="hour">Orario</label>
+      <select name="orario" id="hour">
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="10.30">10:30</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="15">15</option>
+        <option value="16">16</option> </select
+      ><br />
+      <button>Invia</button>
+    </div>
+
+    <div padding="20">
+      <h2>Contattami</h2>
+      <form>
+        <label for="email">E-Mail</label><br />
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="la tua email"
+          required
+        /><br />
+        <label for="message">Messaggio</label><br />
+        <textarea
+          name="messaggio"
+          id="message"
+          cols="30"
+          rows="10"
+          maxlength="100"
+          required
+        ></textarea
+        ><br />
+        <button>Invia</button>
+      </form>
+    </div>
+
     <hr />
 
     <p>Rocco's page &reg;</p>
